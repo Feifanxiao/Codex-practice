@@ -3,15 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>我的第一个 Codex 项目</title>
+    <meta
+      name="description"
+      content="黄昏之后——在哲学、历史与政治哲学中，理解那些发生在边界时刻的问题。"
+    />
+    <title>黄昏之后｜理解发生在边界时刻</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="黄昏之后首页">黄昏之后</a>
+      <nav class="main-nav" aria-label="主导航">
+        <a href="#topics">思想专题</a>
+        <a href="#articles">最新文章</a>
+        <a href="#about">关于</a>
+      </nav>
+    </header>
+
     <main>
-      <h1>我的第一个 Codex 项目</h1>
-      <button id="success-button" type="button">点击我</button>
-      <p id="message" role="status" aria-live="polite"></p>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="sunset-glow" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">哲学 · 历史 · 政治哲学</p>
+          <h1 id="hero-title">黄昏之后</h1>
+          <p class="hero-subtitle">理解发生在边界时刻</p>
+          <a class="read-button" href="#topics">开始阅读 <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero-note">思想总在白昼的尽头，显露出它原本的轮廓。</p>
+      </section>
+
+      <section class="section topics" id="topics" aria-labelledby="topics-title">
+        <div class="section-heading">
+          <p class="section-number">01 / 思想专题</p>
+          <h2 id="topics-title">在漫长的问题中，<br />寻找当下的坐标。</h2>
+        </div>
+
+        <div class="topic-grid">
+          <article class="topic-card">
+            <span class="card-index">I</span>
+            <div>
+              <h3>黑格尔</h3>
+              <p>研究自由、精神、伦理生活与国家。</p>
+            </div>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="topic-card featured">
+            <span class="card-index">II</span>
+            <div>
+              <h3>柏拉图与雅典</h3>
+              <p>从《理想国》到雅典民主，重新理解古典政治哲学。</p>
+            </div>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="topic-card">
+            <span class="card-index">III</span>
+            <div>
+              <h3>现代世界</h3>
+              <p>讨论自由、国家、技术与现代人的处境。</p>
+            </div>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section articles" id="articles" aria-labelledby="articles-title">
+        <div class="section-heading articles-heading">
+          <div>
+            <p class="section-number">02 / 最新文章</p>
+            <h2 id="articles-title">近期思考</h2>
+          </div>
+          <p class="section-intro">在历史留下的缝隙里，辨认仍与我们有关的问题。</p>
+        </div>
+
+        <div class="article-list">
+          <article class="article-card">
+            <div class="article-meta">
+              <span>政治哲学</span>
+              <time datetime="2026-09-18">2026.09.18</time>
+            </div>
+            <h3>自由并非孤独：重读黑格尔的承认</h3>
+            <p>当我们谈论自由时，为什么总需要另一个人的在场？</p>
+            <a href="#" aria-label="阅读：自由并非孤独：重读黑格尔的承认">阅读全文 <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="article-card">
+            <div class="article-meta">
+              <span>古典世界</span>
+              <time datetime="2026-09-05">2026.09.05</time>
+            </div>
+            <h3>苏格拉底审判之后，雅典还剩下什么？</h3>
+            <p>一场古老的审判，如何持续追问民主与真理的边界。</p>
+            <a href="#" aria-label="阅读：苏格拉底审判之后，雅典还剩下什么">阅读全文 <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="article-card">
+            <div class="article-meta">
+              <span>现代性</span>
+              <time datetime="2026-08-24">2026.08.24</time>
+            </div>
+            <h3>技术时代，我们如何理解人的尺度</h3>
+            <p>效率成为共同语言之后，那些无法计算的事物仍在哪里？</p>
+            <a href="#" aria-label="阅读：技术时代，我们如何理解人的尺度">阅读全文 <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </section>
     </main>
+
+    <footer id="about">
+      <p>黄昏之后 <span>·</span> 理解发生在边界时刻</p>
+      <p class="copyright">© 2026 AFTER DUSK</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>

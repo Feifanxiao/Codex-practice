@@ -1,6 +1,19 @@
-const button = document.querySelector("#success-button");
-const message = document.querySelector("#message");
+const internalLinks = document.querySelectorAll('a[href^="#"]');
 
-button.addEventListener("click", () => {
-  message.textContent = "Codex 运行成功！";
+internalLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const targetId = link.getAttribute("href");
+
+    // 示例文章暂时没有详情页，避免点击后页面跳回顶部。
+    if (targetId === "#") {
+      event.preventDefault();
+      return;
+    }
+
+    const target = document.querySelector(targetId);
+    if (!target) return;
+
+    event.preventDefault();
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
 });
