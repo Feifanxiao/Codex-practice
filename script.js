@@ -4,7 +4,7 @@ internalLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     const targetId = link.getAttribute("href");
 
-    // 示例文章暂时没有详情页，避免点击后页面跳回顶部。
+    // 尚未发布的示例文章不触发空链接跳转。
     if (targetId === "#") {
       event.preventDefault();
       return;
