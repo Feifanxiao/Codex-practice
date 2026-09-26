@@ -553,6 +553,12 @@ h2 {
   text-align: center;
 }
 
+.article-return-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
 .back-home {
   display: inline-flex;
   align-items: center;
