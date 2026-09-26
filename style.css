@@ -228,6 +228,11 @@ h2 {
   background: rgba(255, 255, 255, 0.27);
 }
 
+.topic-card:focus-visible {
+  outline: 1px solid var(--ember);
+  outline-offset: 0.45rem;
+}
+
 .card-index {
   align-self: start;
   color: var(--muted);
@@ -341,6 +346,91 @@ h2 {
 .article-card-link:hover,
 .article-card-link:focus-visible {
   background: rgba(255, 255, 255, 0.035);
+}
+
+.article-pending {
+  color: #66696c;
+}
+
+/* Topic page */
+.topic-page {
+  color: #dcd8d0;
+  background: var(--night);
+}
+
+.topic-hero {
+  position: relative;
+  display: flex;
+  min-height: 62svh;
+  align-items: end;
+  overflow: hidden;
+  padding: 10rem clamp(1.4rem, 7vw, 7.5rem) clamp(4rem, 8vw, 6.5rem);
+  background:
+    linear-gradient(180deg, rgba(8, 12, 18, 0.1), #12171e 98%),
+    radial-gradient(circle at 78% 55%, rgba(208, 120, 77, 0.38), transparent 19%),
+    linear-gradient(135deg, #252938, #11171e 68%);
+}
+
+.topic-hero::after {
+  position: absolute;
+  right: 9%;
+  bottom: 8%;
+  width: clamp(10rem, 24vw, 20rem);
+  aspect-ratio: 1;
+  border: 1px solid rgba(225, 145, 91, 0.2);
+  border-radius: 50%;
+  content: "";
+}
+
+.topic-hero-inner {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 64rem);
+}
+
+.topic-kicker {
+  margin: 0 0 1.4rem;
+  color: var(--ember);
+  font-family: system-ui, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.topic-hero h1 {
+  max-width: 58rem;
+  font-size: clamp(3rem, 7vw, 6.2rem);
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  text-indent: 0;
+}
+
+.topic-description {
+  max-width: 38rem;
+  margin: 1.6rem 0 0;
+  color: rgba(242, 238, 231, 0.65);
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+}
+
+.topic-collection {
+  padding-top: clamp(4.5rem, 8vw, 7rem);
+}
+
+.topic-collection .article-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.topic-collection .article-card:nth-child(odd) {
+  padding-left: 0;
+}
+
+.topic-collection .article-card:nth-child(even) {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.topic-home-link {
+  margin-top: clamp(3rem, 6vw, 5rem);
 }
 
 /* Article page */
@@ -538,6 +628,18 @@ footer span {
 
   .article-list {
     grid-template-columns: 1fr;
+  }
+
+  .topic-collection .article-list {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-collection .article-card,
+  .topic-collection .article-card:nth-child(odd),
+  .topic-collection .article-card:nth-child(even) {
+    padding-right: 0;
+    padding-left: 0;
+    border-right: 0;
   }
 
   .article-card,
