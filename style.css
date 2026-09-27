@@ -736,3 +736,17 @@ footer span {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Hegel topic volumes */
+.hegel-volume-list { display: grid; gap: 4.5rem; }
+.hegel-volume { display: grid; gap: 1.5rem; }
+.hegel-volume-heading { max-width: 780px; }
+.hegel-volume-kicker { margin: 0 0 .55rem; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; opacity: .68; }
+.hegel-volume-heading h3 { margin: 0 0 .7rem; font-size: clamp(1.7rem, 3vw, 2.6rem); }
+.hegel-volume-heading > p:last-child { margin-bottom: 0; }
+.hegel-volume-current { padding-top: 2rem; border-top: 1px solid rgba(255,255,255,.16); }
+.right-roadmap { margin-top: 1.35rem; padding: 1.2rem 1.3rem; border: 1px solid rgba(255,255,255,.14); border-radius: 12px; }
+.right-roadmap-principle { margin: 0 0 .7rem; font-size: 1.05rem; line-height: 1.8; }
+.right-roadmap-path { margin: 0; opacity: .76; line-height: 1.8; }
+.right-roadmap-path span { padding: 0 .3rem; opacity: .6; }
