@@ -761,9 +761,28 @@ footer span {
 .hegel-volume-continuity p{line-height:1.9;opacity:.78}.hegel-volume-continuity strong{color:var(--accent,#a96843);margin-right:.65rem}
 @media(max-width:760px){.hegel-volume-nav{grid-template-columns:1fr}.hegel-volume-nav a{border-right:0;border-bottom:1px solid var(--line,#343434)}.hegel-volume-nav a:last-child{border-bottom:0}}
 
-/* Unified return control for all topic and topic-article pages */
+/* Unified return control: same visual level as site brand */
 .site-header{position:relative}
-.header-return{position:absolute;left:clamp(1rem,3vw,3rem);top:50%;transform:translateY(-50%);z-index:5;text-decoration:none;color:inherit;font-size:.82rem;letter-spacing:.12em;opacity:.72;border-bottom:1px solid transparent;padding:.35rem 0}
-.header-return:hover{opacity:1;border-bottom-color:currentColor}
+.site-header .header-return{
+  position:static;
+  transform:none;
+  z-index:auto;
+  display:inline-block;
+  margin-right:clamp(1.5rem,3vw,3rem);
+  padding:0;
+  border:0;
+  text-decoration:none;
+  color:inherit;
+  font-family:inherit;
+  font-size:inherit;
+  font-weight:inherit;
+  letter-spacing:inherit;
+  line-height:inherit;
+  opacity:1;
+}
+.site-header .header-return:hover{opacity:.72;border:0}
 .site-header .main-nav{margin-right:0}
-@media(max-width:760px){.header-return{left:1rem}.site-header .main-nav{margin-right:0}}
+@media(max-width:760px){
+  .site-header .header-return{margin-right:1.25rem}
+  .site-header .main-nav{margin-right:0}
+}
