@@ -858,3 +858,10 @@ footer span {
 .hegel-system-bridge-grid small{margin-top:auto;padding-top:1.1rem;font-size:.75rem;line-height:1.65;opacity:.62}
 .hegel-system-bridge-grid .hegel-system-bridge-modern{background:rgba(208,120,77,.055)}
 @media(max-width:760px){.hegel-system-bridge{margin-top:2.4rem;padding:1.8rem 0}.hegel-system-bridge-grid{grid-template-columns:1fr}.hegel-system-bridge-grid a{min-height:0}.hegel-system-bridge-grid small{margin-top:.75rem;padding-top:0}}
+
+
+/* Hegel topic — orientation essays */
+.hegel-general-essays{margin:2.8rem 0 3.2rem;padding:2rem 0;border-top:1px solid rgba(255,255,255,.09)}
+.hegel-general-essays>h3{margin:.15rem 0 .5rem;font-size:clamp(1.65rem,3vw,2.3rem);font-weight:400}
+.hegel-general-essays>p:not(.technology-stage-kicker){max-width:52rem;margin:0 0 1.5rem;line-height:1.85;opacity:.7}
+.hegel-general-essays .article-list{margin-top:1.4rem}
