@@ -798,3 +798,28 @@ footer span {
 .technology-stage p:nth-child(2) strong{display:block;margin:0 0 .5rem;color:#e7e1d8;font-size:clamp(1.55rem,3vw,2.35rem);font-weight:400;letter-spacing:.04em}
 .technology-stage p:last-child{color:#a5a29c;font-family:system-ui,sans-serif;font-size:.8rem;letter-spacing:.04em}
 @media(max-width:760px){.topic-collection .article-list > .technology-stage{margin:3.6rem 0 .5rem;padding:1.8rem 0 1.35rem}.technology-stage p:nth-child(2) strong{font-size:1.55rem}.technology-stage p{line-height:1.8}}
+
+
+/* Technology topic — final responsive QA */
+.topic-collection .article-list > .technology-stage + .article-card{padding-left:0}
+.topic-collection .article-list > .technology-stage{border-bottom:0}
+.topic-collection .article-card h3{overflow-wrap:anywhere}
+@media(max-width:760px){
+  .topic-hero{min-height:54svh;padding-top:8.5rem}
+  .topic-hero h1{font-size:clamp(2.65rem,12vw,4rem);line-height:1.18}
+  .topic-description{max-width:28rem}
+  .topic-collection .article-list > .technology-stage{grid-column:1;margin-top:3.2rem}
+  .topic-collection .article-card h3{margin-top:2.2rem;font-size:clamp(1.35rem,6vw,1.75rem);line-height:1.5}
+  .topic-collection .article-card p{line-height:1.8}
+  .site-header{justify-content:flex-start}
+  .site-header .brand{margin-right:auto;white-space:nowrap}
+}
+@media(max-width:430px){
+  .site-header{padding-right:1rem;padding-left:1rem}
+  .site-header .header-return{margin-right:1rem;white-space:nowrap}
+  .site-header .brand{font-size:.88rem;letter-spacing:.12em}
+  .topic-hero{padding-right:1.15rem;padding-left:1.15rem}
+  .topic-hero h1{font-size:2.7rem;letter-spacing:.035em}
+  .topic-collection{padding-right:1.15rem;padding-left:1.15rem}
+  .technology-stage p:nth-child(2) strong{line-height:1.4}
+}
