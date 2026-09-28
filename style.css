@@ -750,3 +750,13 @@ footer span {
 .right-roadmap-principle { margin: 0 0 .7rem; font-size: 1.05rem; line-height: 1.8; }
 .right-roadmap-path { margin: 0; opacity: .76; line-height: 1.8; }
 .right-roadmap-path span { padding: 0 .3rem; opacity: .6; }
+
+/* Hegel three-volume navigation */
+.hegel-volume-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line,#343434);border-bottom:1px solid var(--line,#343434);margin:0 0 2.5rem}
+.hegel-volume-nav a{display:flex;flex-direction:column;gap:.55rem;padding:1.5rem 1.35rem;text-decoration:none;color:inherit;border-right:1px solid var(--line,#343434);transition:background .2s ease}
+.hegel-volume-nav a:last-child{border-right:0}.hegel-volume-nav a:hover{background:rgba(255,255,255,.035)}
+.hegel-volume-nav span{font-size:.75rem;letter-spacing:.08em;color:var(--accent,#a96843)}
+.hegel-volume-nav strong{font-size:1.2rem;font-weight:500}.hegel-volume-nav small{font-size:.82rem;line-height:1.6;opacity:.62}
+.hegel-volume-continuity{max-width:64rem;margin:0 0 4rem;padding-left:1.25rem;border-left:2px solid var(--accent,#a96843)}
+.hegel-volume-continuity p{line-height:1.9;opacity:.78}.hegel-volume-continuity strong{color:var(--accent,#a96843);margin-right:.65rem}
+@media(max-width:760px){.hegel-volume-nav{grid-template-columns:1fr}.hegel-volume-nav a{border-right:0;border-bottom:1px solid var(--line,#343434)}.hegel-volume-nav a:last-child{border-bottom:0}}
