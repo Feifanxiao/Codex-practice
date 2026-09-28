@@ -844,3 +844,17 @@ footer span {
 .concept-link a{color:var(--ember);text-decoration:none;border-bottom:1px solid rgba(208,120,77,.28);transition:border-color .2s ease,opacity .2s ease}
 .concept-link a:hover{border-color:currentColor;opacity:.82}
 @media(max-width:760px){.concept-link{display:block;margin-top:-.25rem!important}.concept-link a{display:block;width:max-content;max-width:100%;margin:.42rem 0}}
+
+
+/* Hegel topic — system to modern technology bridge */
+.hegel-system-bridge{margin:3rem 0 2.4rem;padding:2.2rem 0;border-top:1px solid rgba(208,120,77,.42);border-bottom:1px solid rgba(255,255,255,.08)}
+.hegel-system-bridge>h3{margin:.2rem 0 .7rem;font-size:clamp(1.7rem,3vw,2.4rem);font-weight:400;letter-spacing:.035em}
+.hegel-system-bridge-intro{max-width:58rem;margin:0 0 1.7rem;line-height:1.9;opacity:.74}
+.hegel-system-bridge-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:rgba(255,255,255,.1)}
+.hegel-system-bridge-grid a{display:flex;min-height:10.5rem;flex-direction:column;padding:1.35rem;background:var(--ink,#101010);color:inherit;text-decoration:none}
+.hegel-system-bridge-grid a:hover{background:rgba(208,120,77,.07)}
+.hegel-system-bridge-grid span{margin-bottom:.9rem;color:var(--ember);font-family:system-ui,sans-serif;font-size:.7rem;letter-spacing:.12em}
+.hegel-system-bridge-grid strong{font-size:1rem;font-weight:400;line-height:1.6}
+.hegel-system-bridge-grid small{margin-top:auto;padding-top:1.1rem;font-size:.75rem;line-height:1.65;opacity:.62}
+.hegel-system-bridge-grid .hegel-system-bridge-modern{background:rgba(208,120,77,.055)}
+@media(max-width:760px){.hegel-system-bridge{margin-top:2.4rem;padding:1.8rem 0}.hegel-system-bridge-grid{grid-template-columns:1fr}.hegel-system-bridge-grid a{min-height:0}.hegel-system-bridge-grid small{margin-top:.75rem;padding-top:0}}
