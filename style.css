@@ -823,3 +823,17 @@ footer span {
   .topic-collection{padding-right:1.15rem;padding-left:1.15rem}
   .technology-stage p:nth-child(2) strong{line-height:1.4}
 }
+
+
+/* Technology topic — textual foundations */
+.technology-foundations{margin:3.8rem 0 1.5rem;padding:2rem 0 2.4rem;border-top:1px solid rgba(208,120,77,.38);border-bottom:1px solid rgba(255,255,255,.08)}
+.technology-foundations-heading{max-width:58rem;margin-bottom:1.8rem}
+.technology-foundations-heading h3{margin:.15rem 0 .65rem;font-size:clamp(1.7rem,3vw,2.45rem);font-weight:400;letter-spacing:.04em}
+.technology-foundations-heading>p:last-child{max-width:52rem;line-height:1.9;opacity:.74}
+.technology-foundations-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:rgba(255,255,255,.1)}
+.technology-foundations-grid a{display:flex;min-height:11rem;flex-direction:column;padding:1.4rem;background:var(--ink,#101010);color:inherit;text-decoration:none;transition:background .2s ease}
+.technology-foundations-grid a:hover{background:rgba(208,120,77,.08)}
+.technology-foundations-grid span{margin-bottom:1rem;color:var(--ember);font-family:system-ui,sans-serif;font-size:.7rem;letter-spacing:.12em}
+.technology-foundations-grid strong{font-size:1.05rem;font-weight:400;line-height:1.55}
+.technology-foundations-grid small{margin-top:auto;padding-top:1.3rem;font-size:.76rem;line-height:1.6;opacity:.62}
+@media(max-width:760px){.technology-foundations{margin-top:2.8rem}.technology-foundations-grid{grid-template-columns:1fr}.technology-foundations-grid a{min-height:0}.technology-foundations-grid small{margin-top:.9rem;padding-top:0}}
