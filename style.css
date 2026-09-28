@@ -760,3 +760,10 @@ footer span {
 .hegel-volume-continuity{max-width:64rem;margin:0 0 4rem;padding-left:1.25rem;border-left:2px solid var(--accent,#a96843)}
 .hegel-volume-continuity p{line-height:1.9;opacity:.78}.hegel-volume-continuity strong{color:var(--accent,#a96843);margin-right:.65rem}
 @media(max-width:760px){.hegel-volume-nav{grid-template-columns:1fr}.hegel-volume-nav a{border-right:0;border-bottom:1px solid var(--line,#343434)}.hegel-volume-nav a:last-child{border-bottom:0}}
+
+/* Unified return control for all topic and topic-article pages */
+.site-header{position:relative}
+.header-return{position:absolute;right:clamp(1rem,3vw,3rem);top:50%;transform:translateY(-50%);z-index:5;text-decoration:none;color:inherit;font-size:.82rem;letter-spacing:.12em;opacity:.72;border-bottom:1px solid transparent;padding:.35rem 0}
+.header-return:hover{opacity:1;border-bottom-color:currentColor}
+.site-header .main-nav{margin-right:clamp(3.5rem,7vw,6rem)}
+@media(max-width:760px){.header-return{right:1rem}.site-header .main-nav{margin-right:3.5rem}}
