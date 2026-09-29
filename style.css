@@ -971,7 +971,6 @@ footer span {
 .article-page .article-body>h2{position:relative;padding-left:1.55rem}
 .article-page .article-body>h2::before{position:absolute;top:.72em;left:0;width:.42rem;height:.42rem;border:1px solid rgba(208,120,77,.78);border-radius:50%;background:#12171e;content:""}
 .article-page .article-body>h2::after{position:absolute;top:calc(.72em + .42rem);bottom:-4.55rem;left:.2rem;width:1px;background:linear-gradient(rgba(208,120,77,.34),rgba(255,255,255,.07));content:""}
-.article-page .article-body>h2+ p{padding-left:1.55rem}
 .article-page .article-body>h2:hover::before{background:var(--ember)}
 .article-page .article-body>.article-quote{margin-left:1.55rem}
 .article-page .article-body>.guided-next h2{padding-left:0}
@@ -981,7 +980,6 @@ footer span {
 }
 @media(max-width:760px){
   .article-page .article-body>h2{padding-left:1.05rem}
-  .article-page .article-body>h2+ p{padding-left:1.05rem}
   .article-page .article-body>.article-quote{margin-left:1.05rem}
   .article-page .article-body>h2::before{width:.34rem;height:.34rem}
   .article-page .article-body>h2::after{left:.16rem}
