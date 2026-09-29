@@ -992,3 +992,11 @@ footer span {
 .article-page .article-body>.article-end{position:relative;margin-top:clamp(4rem,7vw,6rem);padding-top:2.2rem;border-top:1px solid rgba(208,120,77,.42)}
 .article-page .article-body>.article-end::before{position:absolute;top:.75rem;left:0;color:#8e8b85;content:"本篇至此 / CONTINUE THE THOUGHT";font-family:system-ui,sans-serif;font-size:.62rem;letter-spacing:.14em}
 @media(max-width:760px){.article-page .article-body>.lead{padding-left:1.05rem}.article-page .article-body>.lead::before{font-size:.6rem}.article-page .article-body>.article-end::before{font-size:.58rem}}
+
+
+/* Explicit concept movement — style only what the author has already stated */
+.article-page .article-body>h2:has(+ p>strong){margin-top:clamp(4.8rem,8vw,6.5rem)}
+.article-page .article-body>h2:has(+ p>strong)+p:has(>strong){position:relative;margin:0 0 3rem;padding:1.45rem 1.55rem;border-top:1px solid rgba(208,120,77,.52);border-bottom:1px solid rgba(255,255,255,.1);background:linear-gradient(90deg,rgba(208,120,77,.07),transparent 72%);color:#e0d8cf;font-family:system-ui,sans-serif;font-size:.86rem;letter-spacing:.035em;line-height:2}
+.article-page .article-body>h2:has(+ p>strong)+p:has(>strong)::before{display:block;margin-bottom:.55rem;color:var(--ember);content:"CONCEPT MAP / 概念运动";font-size:.61rem;font-weight:500;letter-spacing:.16em}
+.article-page .article-body>h2:has(+ p>strong)+p:has(>strong) strong{font-weight:400}
+@media(max-width:760px){.article-page .article-body>h2:has(+ p>strong)+p:has(>strong){padding:1.2rem 1.05rem;font-size:.8rem}}
