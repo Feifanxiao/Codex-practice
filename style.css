@@ -942,3 +942,14 @@ footer span {
 .guided-next a:first-child{border-color:rgba(208,120,77,.65)}
 .guided-next a:hover{border-color:var(--ember);background:rgba(208,120,77,.08)}
 @media(max-width:760px){.guided-next>div{display:grid}.guided-next a{line-height:1.65}}
+
+
+/* Homepage manifesto — what makes After Dusk distinct */
+.home-manifesto{padding:clamp(4.5rem,8vw,7rem) clamp(1.4rem,7vw,7.5rem);border-top:1px solid rgba(255,255,255,.08);color:#dcd8d0;background:#12171e}
+.manifesto-kicker{margin:0 0 2rem;color:var(--ember);font-family:system-ui,sans-serif;font-size:.68rem;letter-spacing:.2em}
+.manifesto-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(18rem,.85fr);gap:clamp(3rem,8vw,8rem);align-items:start}
+.manifesto-grid h2{max-width:42rem;color:#eee9e0;font-size:clamp(2rem,4.1vw,3.8rem);line-height:1.45}
+.manifesto-copy{max-width:34rem;padding-top:.45rem;color:#9b9994}
+.manifesto-copy p{margin:0 0 1.15rem;line-height:1.95}
+.manifesto-copy .manifesto-principle{margin-top:2rem;padding-top:1.3rem;border-top:1px solid rgba(208,120,77,.4);color:#d7c9bd;font-family:system-ui,sans-serif;font-size:.76rem;letter-spacing:.07em;line-height:1.9}
+@media(max-width:760px){.manifesto-grid{grid-template-columns:1fr;gap:2rem}.manifesto-copy{padding-top:0}.home-manifesto{padding-top:4rem;padding-bottom:4.5rem}}
