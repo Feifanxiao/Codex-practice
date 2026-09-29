@@ -1015,3 +1015,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ember);outline-offs
   html{scroll-behavior:auto}
   *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
 }
+
+
+/* Series boundaries — make conceptual transitions visible without inventing a fourth Hegel volume */
+.article-page .article-body>.volume-transition{margin:clamp(4.5rem,8vw,7rem) 0 3.5rem;padding:2rem 0;border-top:1px solid rgba(208,120,77,.58);border-bottom:1px solid rgba(255,255,255,.12)}
+.article-page .article-body>.volume-transition>span{display:block;margin-bottom:.8rem;color:var(--ember);font-family:system-ui,sans-serif;font-size:.62rem;letter-spacing:.17em}
+.article-page .article-body>.volume-transition h2{margin:0 0 1rem;padding:0;font-size:clamp(1.45rem,2.6vw,2rem)}
+.article-page .article-body>.volume-transition h2::before,.article-page .article-body>.volume-transition h2::after{display:none}
+.article-page .article-body>.volume-transition p{max-width:41rem;color:#aaa8a2}
+.article-page .article-body>.volume-transition>a{display:inline-block;margin-top:.7rem;padding-bottom:.28rem;border-bottom:1px solid rgba(208,120,77,.5);color:#dfb398;font-family:system-ui,sans-serif;font-size:.76rem;letter-spacing:.055em}
+.article-page .article-body>.volume-transition>a:hover{color:#efad80;border-color:var(--ember)}
+.article-page .article-body>.modern-reconstruction{border-top-style:double}
