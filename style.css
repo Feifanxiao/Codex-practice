@@ -953,3 +953,14 @@ footer span {
 .manifesto-copy p{margin:0 0 1.15rem;line-height:1.95}
 .manifesto-copy .manifesto-principle{margin-top:2rem;padding-top:1.3rem;border-top:1px solid rgba(208,120,77,.4);color:#d7c9bd;font-family:system-ui,sans-serif;font-size:.76rem;letter-spacing:.07em;line-height:1.9}
 @media(max-width:760px){.manifesto-grid{grid-template-columns:1fr;gap:2rem}.manifesto-copy{padding-top:0}.home-manifesto{padding-top:4rem;padding-bottom:4.5rem}}
+
+
+/* Topic reading coordinates — carry the homepage method into deep reading */
+.topic-reading-coordinate{display:grid;grid-template-columns:minmax(9rem,.55fr) 2fr;gap:clamp(2rem,6vw,6rem);padding:clamp(2.8rem,5vw,4.5rem) clamp(1.4rem,7vw,7.5rem);border-bottom:1px solid rgba(255,255,255,.1);background:#11171e}
+.topic-reading-coordinate>span{padding-top:.45rem;color:var(--ember);font-family:system-ui,sans-serif;font-size:.66rem;letter-spacing:.18em}
+.topic-reading-coordinate>div{max-width:55rem}
+.topic-reading-coordinate h2{margin:0;color:#e9e4dc;font-size:clamp(1.55rem,2.8vw,2.5rem);font-weight:400;line-height:1.55}
+.topic-reading-coordinate p{max-width:45rem;margin:1rem 0 1.4rem;color:#92918d;line-height:1.9}
+.topic-reading-coordinate a{display:inline-block;color:#d5b09a;font-family:system-ui,sans-serif;font-size:.75rem;letter-spacing:.06em;border-bottom:1px solid rgba(208,120,77,.35);padding-bottom:.25rem}
+.topic-reading-coordinate a:hover{color:#e3a171;border-color:var(--ember)}
+@media(max-width:760px){.topic-reading-coordinate{grid-template-columns:1fr;gap:1rem}.topic-reading-coordinate>span{padding-top:0}}
