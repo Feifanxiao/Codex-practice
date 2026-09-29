@@ -930,3 +930,15 @@ footer span {
 .question-entry-grid strong{margin:1.2rem 0;font-size:clamp(1.15rem,2vw,1.55rem);font-weight:400;line-height:1.55}
 .question-entry-grid small{margin-top:auto;color:#85888b;line-height:1.7}
 @media(max-width:760px){.question-hero{min-height:58svh;padding-top:8.5rem}.question-path-step{grid-template-columns:1fr;gap:.8rem}.question-path-step h2,.question-path-step>p{grid-column:1}.question-entry-grid{grid-template-columns:1fr}.question-entry-grid a{min-height:10rem}}
+
+
+/* Guided reading — keep first-time readers moving after the entry article */
+.guided-next{margin:4.5rem 0 3rem;padding:2rem 0;border-top:1px solid rgba(208,120,77,.55);border-bottom:1px solid rgba(255,255,255,.12)}
+.guided-next>span{color:var(--ember);font-family:system-ui,sans-serif;font-size:.68rem;letter-spacing:.14em}
+.article-body .guided-next h2{margin:1rem 0 .8rem;font-size:clamp(1.35rem,2.3vw,1.8rem)}
+.guided-next>p{max-width:39rem;color:#aaa8a2}
+.guided-next>div{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.6rem}
+.guided-next a{display:inline-flex;padding:.72rem 1rem;border:1px solid rgba(255,255,255,.2);font-family:system-ui,sans-serif;font-size:.74rem;letter-spacing:.06em;transition:border-color 180ms ease,background 180ms ease}
+.guided-next a:first-child{border-color:rgba(208,120,77,.65)}
+.guided-next a:hover{border-color:var(--ember);background:rgba(208,120,77,.08)}
+@media(max-width:760px){.guided-next>div{display:grid}.guided-next a{line-height:1.65}}
