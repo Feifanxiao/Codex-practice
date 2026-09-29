@@ -1058,3 +1058,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ember);outline-offs
 .topic-method-hegel{background:linear-gradient(90deg,rgba(208,120,77,.035),transparent 70%)}
 .topic-method-classical{background:linear-gradient(90deg,rgba(255,255,255,.025),transparent 70%)}
 @media(max-width:760px){.topic-method-grid{grid-template-columns:1fr}.topic-method-grid>p+p{border-top:1px solid rgba(255,255,255,.09);border-left:0}.topic-method{padding:1.35rem}}
+
+
+/* Homepage topic method labels — reveal how each path reads, without adding another section */
+.topic-card .topic-method-label{display:block;margin-bottom:.7rem;color:rgba(208,120,77,.88);font-family:system-ui,sans-serif;font-size:.59rem;font-weight:500;letter-spacing:.13em;line-height:1.4}
+.topic-card:hover .topic-method-label{color:#e0a17c}
+@media(max-width:760px){.topic-card .topic-method-label{margin-bottom:.55rem;font-size:.56rem;letter-spacing:.1em}}
