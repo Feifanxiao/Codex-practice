@@ -994,9 +994,16 @@ footer span {
 @media(max-width:760px){.article-page .article-body>.lead{padding-left:1.05rem}.article-page .article-body>.lead::before{font-size:.6rem}.article-page .article-body>.article-end::before{font-size:.58rem}}
 
 
-/* Explicit concept movement — style only what the author has already stated */
-.article-page .article-body>h2:has(+ p>strong){margin-top:clamp(4.8rem,8vw,6.5rem)}
-.article-page .article-body>h2:has(+ p>strong)+p:has(>strong){position:relative;margin:0 0 3rem;padding:1.45rem 1.55rem;border-top:1px solid rgba(208,120,77,.52);border-bottom:1px solid rgba(255,255,255,.1);background:linear-gradient(90deg,rgba(208,120,77,.07),transparent 72%);color:#e0d8cf;font-family:system-ui,sans-serif;font-size:.86rem;letter-spacing:.035em;line-height:2}
-.article-page .article-body>h2:has(+ p>strong)+p:has(>strong)::before{display:block;margin-bottom:.55rem;color:var(--ember);content:"CONCEPT MAP / 概念运动";font-size:.61rem;font-weight:500;letter-spacing:.16em}
-.article-page .article-body>h2:has(+ p>strong)+p:has(>strong) strong{font-weight:400}
-@media(max-width:760px){.article-page .article-body>h2:has(+ p>strong)+p:has(>strong){padding:1.2rem 1.05rem;font-size:.8rem}}
+/* Explicit concept movement — progressive enhancement, never required for reading */
+.article-page .article-body>p>strong{color:#ddd7ce}
+@supports selector(h2:has(+ p)){
+  .article-page .article-body>h2:has(+ p>strong){margin-top:clamp(4.8rem,8vw,6.5rem)}
+  .article-page .article-body>h2:has(+ p>strong)+p:has(>strong){position:relative;margin:0 0 3rem;padding:1.45rem 1.55rem;border-top:1px solid rgba(208,120,77,.52);border-bottom:1px solid rgba(255,255,255,.1);background:linear-gradient(90deg,rgba(208,120,77,.07),transparent 72%);color:#e0d8cf;font-family:system-ui,sans-serif;font-size:.86rem;letter-spacing:.035em;line-height:2}
+  .article-page .article-body>h2:has(+ p>strong)+p:has(>strong)::before{display:block;margin-bottom:.55rem;color:var(--ember);content:"CONCEPT MAP / 概念运动";font-size:.61rem;font-weight:500;letter-spacing:.16em}
+  .article-page .article-body>h2:has(+ p>strong)+p:has(>strong) strong{font-weight:400}
+}
+@media(max-width:760px){
+  @supports selector(h2:has(+ p)){
+    .article-page .article-body>h2:has(+ p>strong)+p:has(>strong){padding:1.2rem 1.05rem;font-size:.8rem}
+  }
+}
