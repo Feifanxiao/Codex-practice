@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://feifanxiao.github.io/road-to-freedom/sitemap.xml
