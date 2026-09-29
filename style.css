@@ -1007,3 +1007,11 @@ footer span {
     .article-page .article-body>h2:has(+ p>strong)+p:has(>strong){padding:1.2rem 1.05rem;font-size:.8rem}
   }
 }
+
+
+/* Accessibility baseline — keyboard clarity and reduced-motion preference */
+a:focus-visible,button:focus-visible{outline:2px solid var(--ember);outline-offset:4px}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
