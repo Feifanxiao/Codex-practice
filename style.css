@@ -964,3 +964,25 @@ footer span {
 .topic-reading-coordinate a{display:inline-block;color:#d5b09a;font-family:system-ui,sans-serif;font-size:.75rem;letter-spacing:.06em;border-bottom:1px solid rgba(208,120,77,.35);padding-bottom:.25rem}
 .topic-reading-coordinate a:hover{color:#e3a171;border-color:var(--ember)}
 @media(max-width:760px){.topic-reading-coordinate{grid-template-columns:1fr;gap:1rem}.topic-reading-coordinate>span{padding-top:0}}
+
+
+/* Long-form argument track — visual orientation without altering article text */
+.article-page .article-body{position:relative}
+.article-page .article-body>h2{position:relative;padding-left:1.55rem}
+.article-page .article-body>h2::before{position:absolute;top:.72em;left:0;width:.42rem;height:.42rem;border:1px solid rgba(208,120,77,.78);border-radius:50%;background:#12171e;content:""}
+.article-page .article-body>h2::after{position:absolute;top:calc(.72em + .42rem);bottom:-4.55rem;left:.2rem;width:1px;background:linear-gradient(rgba(208,120,77,.34),rgba(255,255,255,.07));content:""}
+.article-page .article-body>h2+ p{padding-left:1.55rem}
+.article-page .article-body>h2:hover::before{background:var(--ember)}
+.article-page .article-body>.article-quote{margin-left:1.55rem}
+.article-page .article-body>.guided-next h2{padding-left:0}
+.article-page .article-body>.guided-next h2::before,.article-page .article-body>.guided-next h2::after{display:none}
+@media(min-width:1000px){
+  .article-page .article-body::before{position:sticky;top:1.4rem;display:block;width:max-content;margin-left:calc(-1 * clamp(7.5rem,11vw,10rem));margin-bottom:-1.55rem;color:rgba(208,120,77,.68);content:"ARGUMENT / 论证路径";font-family:system-ui,sans-serif;font-size:.62rem;letter-spacing:.16em;writing-mode:vertical-rl}
+}
+@media(max-width:760px){
+  .article-page .article-body>h2{padding-left:1.05rem}
+  .article-page .article-body>h2+ p{padding-left:1.05rem}
+  .article-page .article-body>.article-quote{margin-left:1.05rem}
+  .article-page .article-body>h2::before{width:.34rem;height:.34rem}
+  .article-page .article-body>h2::after{left:.16rem}
+}
