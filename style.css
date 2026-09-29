@@ -986,3 +986,11 @@ footer span {
   .article-page .article-body>h2::before{width:.34rem;height:.34rem}
   .article-page .article-body>h2::after{left:.16rem}
 }
+
+
+/* Long-form entry and exit rhythm */
+.article-page .article-body>.lead{position:relative;margin-bottom:clamp(3.4rem,6vw,5rem);padding:1.8rem 0 1.8rem 1.55rem;border-top:1px solid rgba(208,120,77,.48);border-bottom:1px solid rgba(255,255,255,.1)}
+.article-page .article-body>.lead::before{display:block;margin-bottom:.85rem;color:var(--ember);content:"本文问题 / THE QUESTION";font-family:system-ui,sans-serif;font-size:.65rem;font-weight:500;letter-spacing:.16em}
+.article-page .article-body>.article-end{position:relative;margin-top:clamp(4rem,7vw,6rem);padding-top:2.2rem;border-top:1px solid rgba(208,120,77,.42)}
+.article-page .article-body>.article-end::before{position:absolute;top:.75rem;left:0;color:#8e8b85;content:"本篇至此 / CONTINUE THE THOUGHT";font-family:system-ui,sans-serif;font-size:.62rem;letter-spacing:.14em}
+@media(max-width:760px){.article-page .article-body>.lead{padding-left:1.05rem}.article-page .article-body>.lead::before{font-size:.6rem}.article-page .article-body>.article-end::before{font-size:.58rem}}
